@@ -1,0 +1,62 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/firstNameTextView"
+            style="@style/ProfileName"
+            android:layout_below="@id/profileImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/lastNameTextView"
+            style="@style/ProfileName"
+            android:layout_below="@id/profileImageView"
+            android:layout_toEndOf="@+id/firstNameTextView"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/birthdateTextView"
+            style="@style/ProfileInfo"
+            android:layout_below="@id/firstNameTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/gpaTextView"
+            style="@style/ProfileInfo"
+            android:layout_below="@id/birthdateTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/registrationDateTextView"
+            style="@style/ProfileInfo"
+            android:layout_below="@id/gpaTextView"
+            android:layout_alignParentEnd="false"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
